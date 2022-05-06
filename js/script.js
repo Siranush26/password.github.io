@@ -22,6 +22,7 @@ function leng(){
 function generate(){
     let user="";
     let password="";
+    
   
     if (upper.checked) {
         password += uppercase;
