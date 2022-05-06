@@ -1,0 +1,124 @@
+body{
+    background-image: url(../img/water-drop-background-full-hd-1080p-430178.jpg);
+    font-family: 'Readex Pro', sans-serif;
+    max-width: 100%;
+    
+
+}
+
+hr{
+    width:99%;
+    height:5px;
+    background-color: black;
+}
+
+h3{
+    padding-left:20px;
+}
+
+h2{
+    padding-left:20px;
+
+}
+
+p{
+    padding-left:20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+#length{
+    margin-left: 22px;
+    width:302px;
+    margin-top: 7px;
+}
+#pass{
+    margin-left: 20px;
+    width:300px;
+    height:33px;
+    border:2px solid #66ff66;
+    border-radius: 50px;
+}
+
+
+input[type='range'] {
+    overflow: hidden;
+    width: 80px;
+    -webkit-appearance: none;
+    background-color: #66ff66;
+    border-radius: 50px;
+  }
+
+input[type='range']::-webkit-slider-thumb{
+    cursor:pointer;
+    cursor:grabbing;
+    -webkit-appearance: none;
+    background-image: url(../img/icons8-аниме-эмодзи-16.png);
+    height:16px;
+    width: 16px;
+  
+}
+
+
+
+
+#container{
+   display:flex;
+   flex-direction: column;
+   background-color: rgba(168, 161, 161, 0.404);
+   width:500px;
+   margin:auto;
+   margin-top: 100px;
+   
+}
+
+#button{
+    margin-left: 3px;
+    background-color: rgba(168, 161, 161, 0.404);
+    border:1px solid greenyellow;
+    border-radius:50%; 
+    width:50px;
+    height:50px;
+    background-image: url(../img/icons8-1password-48.png);
+}
+
+#button:active{
+    transform: translateY(1px);
+}
+
+#copy{
+    background-image: url(../img/icons8-скопировать-48.png);
+    background-color: rgba(168, 161, 161, 0.404);
+    width:48px;
+    height:48px;
+    margin-left: 5px;
+    border:1px solid greenyellow;
+   
+}
+
+#copy:active{
+        transform: translateY(1px);
+    }
+
+
+#check{
+    border-color: #b3d7ff;
+    width:20px;
+    height:20px;
+}
+
+.box{
+    margin-left: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+   
+   
+     
+    
+}
+
+#disp{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+}
+
