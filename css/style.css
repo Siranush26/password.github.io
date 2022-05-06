@@ -100,7 +100,7 @@ input[type='range']::-webkit-slider-thumb{
     }
 
 
-#check{
+#upper,#lower,#number,#symbol{
     border-color: #b3d7ff;
     width:20px;
     height:20px;
