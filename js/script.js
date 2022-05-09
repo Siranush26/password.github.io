@@ -1,3 +1,10 @@
+const form = document.querySelector("form")
+
+form.onsubmit = (e) => {
+    e.preventDefault()
+    console.log("submit")
+}
+
 let upper=document.getElementById("upper");
 let lower=document.getElementById("lower");
 let numm=document.getElementById("number");
@@ -8,57 +15,77 @@ let length_slider=document.getElementById("length");
 let pwd=document.getElementById("pwd");
 let copy=document.getElementById("copy");
 
-let lowercase = "abcdefghijklmnopqrstuvwxyz",
-      uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-      numbers = "0123456789",
-      symbols = "!@#$%^&*()_+~`|}{[]:;?><,./-=";
+ let lowercase = "abcdefghijklmnopqrstuvwxyz";
+ let uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+ let numbers = "0123456789";
+ let symbols = "!@#$%^&*()_+~`|}{[]:;?><,./-=";
 
+
+//let charset="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+~`|}{[]:;?><,./-=";
 
 function leng(){
     pwd.innerHTML=length_slider.value;
 }
 
 
-function generate(){
-    let user="";
-    let password="";
-    
-  
+button.addEventListener("click", () =>{
+    let pwdd="";
+   
     if (upper.checked) {
-        password += uppercase;
+      
+      pwdd += uppercase;
+     
       }
     
     if (lower.checked) {
-      password += lowercase;
+      pwdd += lowercase;
       }
 
       if (numm.checked) {
-        password += numbers;
+        pwdd += numbers;
       }
       if (symbol.checked) {
-        password += symbols;
+        pwdd += symbols;
       }
 
-      
-      for (let i=0; i<length_slider.length; i++) {
-        user += password.charAt(Math.floor(Math.random() * password.length))
+
+    pass.value=generatePassword(length_slider.value,pwdd)
+    });
+
+    const generatePassword = (length_slider, pwdd) => {
+    let pass = "";
+  
+    for (let i = 0; i < length_slider; i++) {
+      pass += pwdd.charAt(
+        Math.floor(Math.random() * pwdd.length_slider)
+      );
+      /*
+        pass += uppercase.charAt(
+        Math.floor(Math.random() * pwdd.length_slider)
+      );
+       pass += lowercase.charAt(
+        Math.floor(Math.random() * pwdd.length_slider)
+      );
+       pass += numbers.charAt(
+        Math.floor(Math.random() * pwdd.length_slider)
+      );
+       pass += symbols.charAt(
+        Math.floor(Math.random() * pwdd.length_slider)
+      );
+      */
     }
-       return user
+    return  pass;
+  }
+  
+  function myFunction() {
+   
+    if (pass.type === "password") {
+      pass.type = "text";
+    } else {
+      pass.type = "password";
     }
+  }
 
 
     
-
-
-
-/*
-const randomFunc={
-    upp:getUpper,
-    low:getLower,
-    nummm:getNum,
-    sym:getSymbol,
-}
-*/
-
-
 

@@ -85,6 +85,10 @@ input[type='range']::-webkit-slider-thumb{
     transform: translateY(1px);
 }
 
+#butt{
+   
+}
+
 #copy{
     background-image: url(../img/icons8-скопировать-48.png);
     background-color: rgba(168, 161, 161, 0.404);
@@ -116,7 +120,7 @@ input[type='range']::-webkit-slider-thumb{
     
 }
 
-#disp{
+.disp{
  display: flex;
  flex-direction: row;
  align-items: center;
