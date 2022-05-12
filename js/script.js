@@ -37,7 +37,7 @@ button.addEventListener("click", () =>{
      
       }
     
-    if (lower.checked) {
+     if (lower.checked) {
       pwdd += lowercase;
       }
 
@@ -54,10 +54,12 @@ button.addEventListener("click", () =>{
 
     const generatePassword = (length_slider, pwdd) => {
     let pass = "";
-  
+  console.log(length_slider)
     for (let i = 0; i < length_slider; i++) {
+      console.log(pwdd.length)
+      console.log("N: ", i, Math.floor(Math.random() * pwdd.length))
       pass += pwdd.charAt(
-        Math.floor(Math.random() * pwdd.length_slider)
+        Math.floor(Math.random() * pwdd.length)
       );
       /*
         pass += uppercase.charAt(
