@@ -126,4 +126,17 @@ input[type='range']::-webkit-slider-thumb{
  flex-direction: row;
  align-items: center;
 }
-
+#togglePassword{
+position:absolute; 
+cursor: pointer; 
+right:580px;
+top:273px;
+}
+@media only screen and  (max-width:600px) {
+#togglePassword{
+    position:absolute; 
+    cursor: pointer; 
+    right:200px;
+    top:273px;
+}
+}
